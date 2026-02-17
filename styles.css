@@ -1,0 +1,116 @@
+:root {
+  /* grey shades */
+  --grey-900: hsl(0, 0%, 8%);
+  --grey-800: hsl(0, 0%, 12%);
+  --grey-700: hsl(0, 0%, 20%);
+
+  --green: hsl(75, 94%, 57%);
+
+  --white: hsl(0, 0%, 100%);
+}
+
+@font-face {
+  font-family: InterBold;
+  src: url("assets/fonts/Inter-VariableFont_slnt,wght.ttf");
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: auto;
+  background-color: var(--grey-700);
+  padding: 5px;
+  border-radius: 5px 5px 0px 0px;
+  font-family: "Courier New", Courier, monospace;
+  color: var(--green);
+}
+.attribution a {
+  color: hsl(229, 25%, 73%);
+}
+
+body {
+  background-color: var(--grey-900);
+  display: grid;
+  min-height: 100vh;
+  margin: 0;
+  grid-template-rows: 1fr auto;
+  place-items: center;
+  color: var(--white);
+  font-family: InterBold;
+}
+
+.social-card {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--grey-800);
+  padding: 40px;
+  border-radius: 12px;
+  gap: 24px;
+}
+
+.social-card img {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+}
+
+.links {
+  width: 100%;
+  align-self: stretch;
+  margin: 0;
+  padding: 0;
+}
+
+.links a {
+  text-decoration: none;
+  color: white;
+  padding: 12px;
+  display: block;
+}
+
+.social-card ul {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  text-align: center;
+  gap: 16px;
+}
+
+.social-card li {
+  background-color: var(--grey-700);
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.social-card li:hover {
+  background-color: var(--green);
+}
+
+.social-card li:hover a {
+  transition: 0.3s;
+  color: var(--grey-900);
+}
+
+.name-loc h1 {
+  padding: 0;
+  margin: 0;
+  font-size: 24px;
+  line-height: 150%;
+  font-weight: bold;
+}
+
+.name-loc h3 {
+  margin: 0;
+  font-size: 14px;
+  color: var(--green);
+}
+
+.description {
+  margin: 0;
+  font-size: 14px;
+  line-height: 150%;
+  font-weight: 300;
+}
