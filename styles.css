@@ -46,13 +46,13 @@ body {
   align-items: center;
   background-color: var(--grey-800);
   padding: 40px;
-  border-radius: 12px;
-  gap: 24px;
+  border-radius: 0.75rem;
+  gap: 1.5rem;
 }
 
 .social-card img {
-  width: 88px;
-  height: 88px;
+  max-width: 88px;
+  max-height: 88px;
   border-radius: 50%;
 }
 
@@ -66,7 +66,7 @@ body {
 .links a {
   text-decoration: none;
   color: white;
-  padding: 12px;
+  padding: 0.75rem;
   display: block;
 }
 
@@ -76,12 +76,12 @@ body {
   flex-direction: column;
   list-style-type: none;
   text-align: center;
-  gap: 16px;
+  gap: 1rem;
 }
 
 .social-card li {
   background-color: var(--grey-700);
-  border-radius: 8px;
+  border-radius: 0.5rem;
   transition: 0.3s;
 }
 
@@ -97,20 +97,20 @@ body {
 .name-loc h1 {
   padding: 0;
   margin: 0;
-  font-size: 24px;
+  font-size: 1.5rem;
   line-height: 150%;
   font-weight: bold;
 }
 
-.name-loc h3 {
+.name-loc h2 {
   margin: 0;
-  font-size: 14px;
+  font-size: 0.875rem;
   color: var(--green);
 }
 
 .description {
   margin: 0;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 150%;
   font-weight: 300;
 }
